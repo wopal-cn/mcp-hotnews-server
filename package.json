@@ -1,0 +1,43 @@
+{
+  "name": "@wopal/mcp-server-hotnews",
+  "version": "0.2.0",
+  "description": "A Model Context Protocol server that provides real-time hot trending topics from major Chinese social platforms and news sites",
+  "main": "build/index.js",
+  "bin": {
+    "mcp-server-hotnews": "build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "hot-news",
+    "trending",
+    "zhihu",
+    "weibo",
+    "bilibili",
+    "chinese-social-media"
+  ],
+  "author": "SamuelXu: Sam618.xu@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "axios": "^1.7.9"
+  },
+  "scripts": {
+    "build": "tsc && shx chmod +x build/*.js",
+    "prepublishOnly": "npm run build",
+    "pub": "npm run build && npm publish",
+    "test:urls": "node --loader ts-node/esm test/url-test.ts",
+    "watch": "tsc --watch",
+    "docker": "docker build -t wopal/mcp-server-hotnews:latest -f Dockerfile ."
+  },
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "typescript": "^5.7.2",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.11.0"
+  },
+  "type": "module"
+}
