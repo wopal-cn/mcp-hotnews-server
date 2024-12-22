@@ -50,6 +50,25 @@ A Model Context Protocol (MCP) server that provides real-time hot trending topic
 }
 ```
 
+### Docker 
+（ Docker image not uploaded to Docker Hub, need to build it yourself. ）
+
+```json
+{
+  "mcpServers": {
+    "mcp-server-hotnews": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "wopal/mcp-server-hotnews"
+      ]
+    }
+  }
+}
+```
+
 ## Development
 
 ```bash
