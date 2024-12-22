@@ -2,6 +2,8 @@
 
 A Model Context Protocol (MCP) server that provides real-time hot trending topics from major Chinese social platforms and news sites.
 
+<a href="https://glama.ai/mcp/servers/hmr0lo8sa3"><img width="380" height="200" src="https://glama.ai/mcp/servers/hmr0lo8sa3/badge" alt="@wopal/mcp-server-hotnews MCP server" /></a>
+
 ## Features
 
 - Real-time hot topics from 9 major Chinese platforms
