@@ -1,4 +1,5 @@
 # HotNews MCP Server
+[![smithery badge](https://smithery.ai/badge/@wopal/mcp-server-hotnews)](https://smithery.ai/server/@wopal/mcp-server-hotnews)
 
 A Model Context Protocol (MCP) server that provides real-time hot trending topics from major Chinese social platforms and news sites.
 
@@ -33,6 +34,14 @@ A Model Context Protocol (MCP) server that provides real-time hot trending topic
   - `get_hot_news([1,2,3,4])` : Get hot lists from zhihuHot, 36Kr, Baidu, and Bilibili`
 
 ## Installation
+
+### Installing via Smithery
+
+To install HotNews Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@wopal/mcp-server-hotnews):
+
+```bash
+npx -y @smithery/cli install @wopal/mcp-server-hotnews --client claude
+```
 
 ### NPX
 
